@@ -1,4 +1,4 @@
-A= True
+A = True
 Result = 0
 while A:
     B = True
