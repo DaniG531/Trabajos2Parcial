@@ -27,10 +27,20 @@ def EndGame():
 
 print(f"Tienes {PlayerMarbles} Canicas.")
 Game = True
+Ciclo = True
 while Game:
     ### Turno Jugador ###
     print("¿Cuantas Canicas quieres apostar?")
-    PlayerBet = int(input())
+    while Ciclo:
+        PlayerBet = int(input())
+        if PlayerBet > 0 and PlayerBet <= PlayerMarbles:
+            break
+        else:
+            print("")
+            print("La Apuesta No puede ser 0 y debe ser una Cantidad Posible con Tus Canicas.")
+            print("")
+    
+    
     print("")
     if PlayerBet % 2 == 0:    #True = Par
         Even = True           #False = Inpar
