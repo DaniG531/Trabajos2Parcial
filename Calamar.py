@@ -16,8 +16,9 @@ def PlayerWins():
     print(f" - Has Ganado {CPUBet} canicas")
     print("")
     print("=========================================")
+    
 
-def EndGame():
+#def EndGame():
     if PlayerMarbles == 20:
         Game = False
         return Game
@@ -72,7 +73,6 @@ while Game:
 
     print("")
     print(f"Tienes {PlayerMarbles} Canicas.")
-    
 
     if PlayerMarbles == 20:
         Game = False

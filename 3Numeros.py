@@ -21,6 +21,7 @@ for i in range(len(lista)):
     while lista[i] > des:
         des += 10
         dess += 10
+        cont = 0
     if dess <= lista[i] and lista[i] <= des:
         print(lista[i], end=" ")
         cont += 1
